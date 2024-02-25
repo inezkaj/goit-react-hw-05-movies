@@ -15,6 +15,7 @@ const MovieDetails = () => {
         if (response) {
           setMovieData(response);
           console.log(movieData);
+          console.log(movieId);
         }
       },
       reason => {
@@ -38,7 +39,10 @@ const MovieDetails = () => {
         <>
           <div className={css.details}>
             <div>
-              <img src={imageURL(movieData.backdrop_path)}></img>
+              <img
+                alt="img_movie"
+                src={imageURL(movieData.backdrop_path)}
+              ></img>
             </div>
             <div>
               <h2>{movieData.title}</h2>

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import css from 'components/Searchbar/Searchbar.module.css';
-import React, { useState } from 'react';
 
 const Searchbar = ({ onSubmit }) => {
   const handleSubmit = evt => {

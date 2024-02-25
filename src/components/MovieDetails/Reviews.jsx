@@ -13,6 +13,7 @@ const Reviews = () => {
       if (response.results) {
         setMovieReviews(response.results);
         console.log(movieReviews);
+        console.log(movieId);
       }
     });
   }, []);

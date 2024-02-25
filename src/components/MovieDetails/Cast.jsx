@@ -12,6 +12,7 @@ const Cast = () => {
   useEffect(() => {
     fetchMovieCastById(movieId).then(response => {
       console.log(response);
+      console.log(movieId);
       if (response.cast) {
         setMovieCast(response.cast);
       }
@@ -27,6 +28,7 @@ const Cast = () => {
               <li className={css.castList} key={actor.id}>
                 <div>
                   <img
+                    alt="img"
                     className={css.castImg}
                     src={imageURL(actor.profile_path)}
                   ></img>
