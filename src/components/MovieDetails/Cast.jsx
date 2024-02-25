@@ -11,13 +11,11 @@ const Cast = () => {
 
   useEffect(() => {
     fetchMovieCastById(movieId).then(response => {
-      console.log(response);
-      console.log(movieId);
       if (response.cast) {
         setMovieCast(response.cast);
       }
     });
-  }, []);
+  }, [movieId]);
 
   return (
     <>

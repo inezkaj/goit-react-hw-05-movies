@@ -1,6 +1,6 @@
 import MoviesList from 'components/MoviesList/MoviesList';
 import React from 'react';
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { fetchMovieByQuery } from 'components/Api/Api.jsx';
 import { useSearchParams } from 'react-router-dom';
 import Searchbar from 'components/Searchbar/Searchbar';

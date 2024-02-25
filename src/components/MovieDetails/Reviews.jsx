@@ -12,11 +12,9 @@ const Reviews = () => {
     fetchMovieReviewsById(movieId).then(response => {
       if (response.results) {
         setMovieReviews(response.results);
-        console.log(movieReviews);
-        console.log(movieId);
       }
     });
-  }, []);
+  }, [movieId]);
 
   return (
     <>

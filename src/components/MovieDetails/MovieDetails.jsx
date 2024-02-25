@@ -14,15 +14,13 @@ const MovieDetails = () => {
       response => {
         if (response) {
           setMovieData(response);
-          console.log(movieData);
-          console.log(movieId);
         }
       },
       reason => {
         console.log(reason);
       }
     );
-  }, []);
+  }, [movieId, movieData]);
 
   return (
     <>
