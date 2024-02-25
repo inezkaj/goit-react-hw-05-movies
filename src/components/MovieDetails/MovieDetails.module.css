@@ -1,0 +1,18 @@
+.details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.btnMovies {
+  margin-top: 10px;
+  width: 200px;
+  height: 20px;
+}
+.castList {
+  display: flex;
+  flex-direction: row;
+}
+.castImg {
+  height: 80%;
+}

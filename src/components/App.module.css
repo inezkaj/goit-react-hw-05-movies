@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navApp {
+  width: 100vw;
+  height: 40px;
+  border: solid;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.navApp a {
+  margin-left: 20px;
+}
+.navApp a:hover {
+  color: goldenrod;
+  cursor: pointer;
+}
